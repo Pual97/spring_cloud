@@ -10,6 +10,7 @@
         <module name="eureka-2" />
         <module name="eureka-provider01" />
         <module name="eureka-provider02" />
+        <module name="hystrix" />
         <module name="spring_cloud" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="eureka-2" options="" />
       <module name="eureka-provider01" options="" />
       <module name="eureka-provider02" options="" />
+      <module name="hystrix" options="" />
       <module name="spring_cloud" options="" />
     </option>
   </component>

@@ -17,6 +17,7 @@
         <module>eureka-1</module>
         <module>eureka-provider01</module>
         <module>eureka-provider02</module>
+        <module>hystrix</module>
     </modules>
     <dependencies>
         <dependency>
@@ -26,6 +27,14 @@
             <type>pom</type>
             <scope>import</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.20</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
 
