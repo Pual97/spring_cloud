@@ -1,30 +1,26 @@
-package com.pual.sz.hystrix;
+package com.pual.sz.ribbon;
 
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RandomRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @EnableDiscoveryClient
-@EnableCircuitBreaker
 @SpringBootApplication
-public class HystrixApplication {
+public class RibbonApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HystrixApplication.class, args);
+        SpringApplication.run(RibbonApplication.class, args);
     }
 
-    /**
-     * 注入负载策略规则对象
-     * @return
-     */
+
     @Bean
-    public IRule ribbonRule(){
+    @LoadBalanced
+    public IRule iRuleRandom(){
         return new RandomRule();
     }
 
