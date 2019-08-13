@@ -11,7 +11,15 @@
         <option value="$PROJECT_DIR$/eureka-2/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix/pom.xml" />
         <option value="$PROJECT_DIR$/ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_config/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_config_client/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_config_server/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/hello-starter/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

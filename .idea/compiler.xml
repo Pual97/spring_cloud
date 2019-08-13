@@ -2,26 +2,36 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud_config_client" />
+        <module name="cloud_config_server" />
         <module name="eureka-1" />
         <module name="eureka-2" />
         <module name="eureka-provider01" />
         <module name="eureka-provider02" />
+        <module name="hello-starter" />
         <module name="hystrix" />
         <module name="ribbon" />
-        <module name="spring_cloud" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hello-starter" target="1.6" />
+      <module name="hellostarter" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud_config_client" options="" />
+      <module name="cloud_config_server" options="" />
       <module name="eureka-1" options="" />
       <module name="eureka-2" options="" />
       <module name="eureka-provider01" options="" />
       <module name="eureka-provider02" options="" />
+      <module name="hello-starter" options="" />
       <module name="hystrix" options="" />
       <module name="ribbon" options="" />
       <module name="spring_cloud" options="" />
