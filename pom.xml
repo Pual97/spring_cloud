@@ -20,10 +20,11 @@
         <module>eureka-provider02</module>
         <module>hystrix</module>
         <module>ribbon</module>
-        <module>hello-starter</module>
-        <module>hello-starter</module>
+        <module>mq-starter</module>
         <module>cloud_config_client</module>
         <module>cloud_config_server</module>
+        <module>rocket-mq</module>
+        <module>base-start-core</module>
     </modules>
     <dependencies>
         <dependency>
@@ -40,6 +41,11 @@
             <artifactId>lombok</artifactId>
             <version>1.16.20</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <artifactId>slf4j-api</artifactId>
+            <groupId>org.slf4j</groupId>
+            <version>1.7.25</version>
         </dependency>
 
     </dependencies>
