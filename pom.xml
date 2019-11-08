@@ -25,6 +25,7 @@
         <module>cloud_config_server</module>
         <module>rocket-mq</module>
         <module>base-start-core</module>
+        <module>wx</module>
     </modules>
     <dependencies>
         <dependency>

@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="base-start-core" />
+        <module name="basic" />
         <module name="cloud_config_client" />
         <module name="cloud_config_server" />
         <module name="eureka-1" />
@@ -19,6 +20,7 @@
         <module name="mq-starter" />
         <module name="ribbon" />
         <module name="rocket-mq" />
+        <module name="wx" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -38,6 +40,7 @@
       <module name="ribbon" options="" />
       <module name="rocket-mq" options="" />
       <module name="spring_cloud" options="" />
+      <module name="wx" options="" />
     </option>
   </component>
 </project>
