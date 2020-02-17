@@ -20,6 +20,7 @@
         <module name="mq-starter" />
         <module name="ribbon" />
         <module name="rocket-mq" />
+        <module name="spring-admin" />
         <module name="wx" />
       </profile>
     </annotationProcessing>
@@ -29,18 +30,22 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="cloud_config_client" options="" />
-      <module name="cloud_config_server" options="" />
-      <module name="eureka-1" options="" />
-      <module name="eureka-2" options="" />
-      <module name="eureka-provider01" options="" />
-      <module name="eureka-provider02" options="" />
-      <module name="hystrix" options="" />
+      <module name="base-start-core" options="-parameters" />
+      <module name="basic" options="-parameters" />
+      <module name="cloud_config_client" options="-parameters" />
+      <module name="cloud_config_server" options="-parameters" />
+      <module name="eureka-1" options="-parameters" />
+      <module name="eureka-2" options="-parameters" />
+      <module name="eureka-provider01" options="-parameters" />
+      <module name="eureka-provider02" options="-parameters" />
+      <module name="hello-starter" options="-parameters" />
+      <module name="hystrix" options="-parameters" />
       <module name="mq-starter" options="" />
-      <module name="ribbon" options="" />
-      <module name="rocket-mq" options="" />
+      <module name="ribbon" options="-parameters" />
+      <module name="rocket-mq" options="-parameters" />
+      <module name="spring-admin" options="-parameters" />
       <module name="spring_cloud" options="" />
-      <module name="wx" options="" />
+      <module name="wx" options="-parameters" />
     </option>
   </component>
 </project>

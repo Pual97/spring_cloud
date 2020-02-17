@@ -34,4 +34,7 @@ public abstract class BasicException extends RuntimeException {
         this.msgKey = msgKey;
     }
 
+    public BasicException() {
+
+    }
 }

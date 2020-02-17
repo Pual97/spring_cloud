@@ -19,6 +19,20 @@ eureka:
       defaultZone: http://localhost:8081/eureka/
   server:
     enable-self-preservation: false
+
 spring:
   application:
-    name: eureka-service
+    name: eureka-service-8080
+  boot:
+    admin:
+      client:
+        url: http://localhost:11000/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS

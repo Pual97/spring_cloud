@@ -31,3 +31,5 @@ config server端发出消息，订阅该消息的服务会去获取刷新的值�
 的值。
 
 
+#Spring Boot Admin Demo
+ 

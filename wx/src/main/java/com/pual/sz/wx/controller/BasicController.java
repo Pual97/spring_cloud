@@ -41,38 +41,6 @@ public class BasicController {
         return "非法请求";
     }
 
-//    @PostMapping(produces = "application/xml; charset=UTF-8")
-//    public String post(@PathVariable Integer agentId,
-//                       @RequestBody String requestBody,
-//                       @RequestParam("msg_signature") String signature,
-//                       @RequestParam("timestamp") String timestamp,
-//                       @RequestParam("nonce") String nonce) {
-//        this.logger.info("\n接收微信请求：[signature=[{}], timestamp=[{}], nonce=[{}], requestBody=[\n{}\n] ",
-//                signature, timestamp, nonce, requestBody);
-//
-//        final WxCpService wxCpService = WxCpConfiguration.getCpService(agentId);
-//        WxCpXmlMessage inMessage = WxCpXmlMessage.fromEncryptedXml(requestBody, wxCpService.getWxCpConfigStorage(),
-//                timestamp, nonce, signature);
-//        this.logger.debug("\n消息解密后内容为：\n{} ", JsonUtils.toJson(inMessage));
-//        WxCpXmlOutMessage outMessage = this.route(agentId, inMessage);
-//        if (outMessage == null) {
-//            return "";
-//        }
-//
-//        String out = outMessage.toEncryptedXml(wxCpService.getWxCpConfigStorage());
-//        this.logger.debug("\n组装回复信息：{}", out);
-//        return out;
-//    }
-//
-//    private WxCpXmlOutMessage route(Integer agentId, WxCpXmlMessage message) {
-//        try {
-//            return WxCpConfiguration.getRouters().get(agentId).route(message);
-//        } catch (Exception e) {
-//            this.logger.error(e.getMessage(), e);
-//        }
-//
-//        return null;
-//    }
 
 
 

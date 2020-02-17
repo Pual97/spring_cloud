@@ -5,16 +5,13 @@ import me.chanjar.weixin.common.bean.menu.WxMenuButton;
 import me.chanjar.weixin.common.error.WxErrorException;
 import me.chanjar.weixin.mp.api.WxMpService;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
 public class WxApplicationTests {
 
     @Autowired
@@ -52,6 +49,61 @@ public class WxApplicationTests {
         System.out.println(1231);
 
 
+    }
+
+
+    /**
+     * 给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
+     * 输入: [-2,1,-3,4,-1,2,1,-5,4],
+     * 输出: 6
+     * 解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。
+     */
+    @Test
+    public void test(){
+        NumberOf1(2147483647);
+        NumberOf1(-2147483648);
+//        System.out.println(~5);
+//        System.out.println(Integer.MAX_VALUE+"   "+Integer.MIN_VALUE);
+    }
+
+
+    public int NumberOf1(int n) {
+        int result = 0;
+        if( n == 0) return result;
+        if(n > 0) {
+            do {
+                if (n % 2 == 1) result++;
+                n = n / 2;
+                if (n == 1) {
+                    result++;
+                }
+            } while (n / 2 != 0);
+        }else {
+            n = ~n;
+            do {
+                if (n % 2 == 1) result++;
+                System.out.print(n % 2);
+                n = n / 2;
+                if (n == 1) {
+                    result++;
+                }
+            } while (n / 2 != 0);
+            result = 32 -result;
+        }
+        return result;
+    }
+
+
+    public int RectCover(int target) {
+        if(target == 0)
+            return 0;
+        else if(target == 1) {
+            return 1;
+        }else if(target == 2) {
+            return 2;
+        }else {
+            return RectCover(target-1)+RectCover(target-2);
+        }
     }
 
 }

@@ -2,8 +2,20 @@ server:
   port: 8003
 spring:
   application:
-    name: hello-service
+    name: hello-service-8003
+  boot:
+    admin:
+      client:
+        url: http://localhost:11000/
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8080/eureka/,http://localhost:8081/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
